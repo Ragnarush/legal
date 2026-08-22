@@ -1,36 +1,209 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr-CA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AOGO — Privacy Policy</title>
-  <link rel="stylesheet" href="../style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité — AoGO</title>
+<style>
+  :root {
+    --ink: #1a2332;
+    --ink-soft: #4a5568;
+    --paper: #fafaf8;
+    --line: #e2e0d8;
+    --accent: #c2540a;
+    --accent-soft: #fdf0e6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+  header {
+    border-bottom: 3px solid var(--ink);
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0 0 8px;
+  }
+  .meta {
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 44px 0 14px;
+    padding-top: 4px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  p { margin: 0 0 14px; color: var(--ink); }
+  ul { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    border-radius: 4px;
+    margin: 0 0 16px;
+    font-size: 0.95rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 0 16px;
+    font-size: 0.92rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  th {
+    font-weight: 700;
+    background: #f1efe8;
+  }
+  a { color: var(--accent); text-decoration: underline; }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+  }
+</style>
 </head>
 <body>
-  <main>
-    <a class="back" href="../index.html">&larr; Back to Legal</a>
-    <h1>Privacy Policy — AOGO</h1>
-    <p class="subtitle">Effective date: August 21, 2026</p>
+<div class="wrap">
 
-    <p>[TODO: one or two sentences describing what AOGO is and does.]</p>
+  <header>
+    <p class="eyebrow">AoGO</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 18 juillet 2026</p>
+  </header>
 
-    <h2>Information we collect</h2>
-    <p>[TODO: list the data AOGO collects — e.g. account info, device identifiers, usage analytics — or state that no personal data is collected.]</p>
+  <p>AoGO ("nous", "notre application") respecte la vie privée des entrepreneurs en construction qui utilisent ses services. Cette politique explique quelles renseignements personnels nous recueillons, pourquoi, et comment vous pouvez exercer vos droits.</p>
 
-    <h2>How we use information</h2>
-    <p>[TODO: describe how collected data is used, e.g. to operate the app, improve features, provide support.]</p>
+  <h2>1. Qui sommes-nous</h2>
+  <p>AoGO est une application développée et exploitée à titre individuel, destinée aux entrepreneurs en construction au Québec. Pour toute question relative à vos renseignements personnels, vous pouvez nous contacter à l'adresse indiquée au bas de cette page.</p>
 
-    <h2>Sharing of information</h2>
-    <p>[TODO: state whether data is shared with third parties, e.g. analytics or crash-reporting providers, and name them.]</p>
+  <h2>2. Renseignements que nous recueillons</h2>
+  <table>
+    <tr><th>Catégorie</th><th>Détail</th><th>Pourquoi</th></tr>
+    <tr>
+      <td>Identifiants de compte</td>
+      <td>Adresse courriel, mot de passe (chiffré)</td>
+      <td>Créer et sécuriser votre compte</td>
+    </tr>
+    <tr>
+      <td>Profil professionnel</td>
+      <td>Nom complet, nom d'entreprise, spécialités, régions d'intérêt</td>
+      <td>Personnaliser le fil d'appels d'offres</td>
+    </tr>
+    <tr>
+      <td>Identifiant de notification</td>
+      <td>Jeton Firebase Cloud Messaging (FCM)</td>
+      <td>Envoyer des notifications push pour les nouveaux appels d'offres</td>
+    </tr>
+    <tr>
+      <td>Statut d'abonnement</td>
+      <td>Plan Gratuit ou Pro</td>
+      <td>Activer les fonctionnalités correspondant à votre forfait</td>
+    </tr>
+    <tr>
+      <td>Favoris et préférences</td>
+      <td>Appels d'offres sauvegardés, filtres appliqués</td>
+      <td>Améliorer votre expérience de recherche</td>
+    </tr>
+    <tr>
+      <td>Documents et analyses (Extrait IA)</td>
+      <td>Documents que vous choisissez de téléverser pour analyse (ex. devis, soumissions), le résultat de l'analyse, et votre historique de crédits prépayés et de transactions</td>
+      <td>Vous fournir, à votre demande, une analyse assistée par IA de vos propres documents ; gérer votre solde de crédits</td>
+    </tr>
+  </table>
 
-    <h2>Data retention &amp; security</h2>
-    <p>[TODO: describe how long data is kept and the measures taken to protect it.]</p>
+  <div class="callout">
+    <strong>Ce que nous ne recueillons pas :</strong> AoGO ne collecte aucune donnée de géolocalisation GPS et ne stocke aucune information de carte de crédit ou de paiement. Les transactions sont traitées entièrement par Google Play Billing.
+  </div>
 
-    <h2>Your rights</h2>
-    <p>[TODO: describe how a user can request deletion or export of their data.]</p>
+  <h2>3. Comment nous utilisons vos renseignements</h2>
+  <ul>
+    <li>Vous authentifier et sécuriser l'accès à votre compte</li>
+    <li>Filtrer et vous présenter les appels d'offres pertinents selon vos régions et spécialités</li>
+    <li>Vous envoyer des notifications push lorsqu'un nouvel appel d'offres correspond à votre profil (plan Pro)</li>
+    <li>Gérer votre abonnement et son renouvellement</li>
+    <li>Effectuer, à votre demande explicite, une analyse assistée par IA des documents que vous téléversez (fonctionnalité optionnelle Extrait IA)</li>
+    <li>Améliorer la fiabilité et la performance de l'application</li>
+  </ul>
+  <p>Nous ne vendons, ne louons et ne partageons jamais vos renseignements personnels à des fins publicitaires ou commerciales avec des tiers.</p>
 
-    <h2>Contact</h2>
-    <p>Questions about this policy? Contact us at <a href="mailto:ragnarush77@gmail.com">ragnarush77@gmail.com</a>.</p>
-  </main>
+  <h2>4. Partage avec des fournisseurs de services</h2>
+  <p>Pour faire fonctionner AoGO, certaines données transitent par les fournisseurs suivants, chacun agissant comme sous-traitant et soumis à ses propres engagements de confidentialité :</p>
+  <ul>
+    <li><strong>Supabase</strong> (hébergement de la base de données et authentification)</li>
+    <li><strong>Google Firebase</strong> (envoi des notifications push)</li>
+    <li><strong>Google Play Billing</strong> (traitement des paiements d'abonnement)</li>
+    <li><strong>Anthropic (Claude)</strong> — utilisé côté serveur de deux façons distinctes : (1) pour générer automatiquement, à partir de renseignements publics du SEAO, un résumé de chaque appel d'offres affiché dans l'application — aucune donnée personnelle d'utilisateur n'est impliquée dans ce traitement ; (2) pour la fonctionnalité optionnelle <strong>Extrait IA</strong>, qui analyse, à votre demande, les documents que vous choisissez d'y téléverser (devis, soumissions, etc.) — le contenu de ces documents est alors transmis à Anthropic aux seules fins de produire l'analyse demandée. Ne téléversez que des documents dont vous consentez à la transmission à ce sous-traitant.</li>
+  </ul>
+
+  <h2>5. Conservation des données</h2>
+  <p>Vos renseignements sont conservés tant que votre compte est actif. Vous pouvez demander la suppression complète de votre compte et des données associées en tout temps en nous contactant, y compris les documents téléversés pour Extrait IA et les fichiers correspondants dans notre espace de stockage.</p>
+
+  <h2>6. Sécurité</h2>
+  <p>Les mots de passe sont chiffrés et jamais stockés en clair. Les communications entre l'application et nos serveurs sont chiffrées (HTTPS/TLS). L'accès à la base de données est protégé par des règles de sécurité au niveau des lignes (Row Level Security), garantissant que chaque utilisateur ne peut consulter que ses propres données. Les documents téléversés pour Extrait IA sont stockés dans un espace privé auquel seul vous avez accès.</p>
+
+  <h2>7. Vos droits (Loi 25 — Québec)</h2>
+  <p>Conformément à la <em>Loi sur la protection des renseignements personnels dans le secteur privé</em>, vous avez le droit de :</p>
+  <ul>
+    <li>Accéder aux renseignements personnels que nous détenons à votre sujet</li>
+    <li>Faire corriger des renseignements inexacts ou incomplets</li>
+    <li>Retirer votre consentement et demander la suppression de votre compte</li>
+    <li>Déposer une plainte auprès de la Commission d'accès à l'information du Québec si vous estimez que vos droits n'ont pas été respectés</li>
+  </ul>
+  <p>Pour exercer l'un de ces droits, contactez-nous à l'adresse ci-dessous. Nous répondrons dans un délai raisonnable.</p>
+
+  <h2>8. Appels d'offres publics</h2>
+  <p>Le contenu des appels d'offres affiché dans l'application provient du Système électronique d'appel d'offres du gouvernement du Québec (SEAO), une source de données publiques. Ces informations ne constituent pas des renseignements personnels.</p>
+
+  <h2>9. Mineurs</h2>
+  <p>AoGO s'adresse à des professionnels de l'industrie de la construction et n'est pas destiné aux personnes de moins de 18 ans.</p>
+
+  <h2>10. Modifications de cette politique</h2>
+  <p>Cette politique peut être mise à jour occasionnellement. La date de dernière mise à jour en haut de page reflète la version en vigueur. Tout changement important vous sera communiqué via l'application.</p>
+
+  <h2>11. Nous contacter</h2>
+  <p>Pour toute question concernant cette politique ou vos renseignements personnels :</p>
+  <p><strong>Courriel :</strong> <a href="mailto:appeloffrego@gmail.com">appeloffrego@gmail.com</a></p>
+
+  <footer>
+    AoGO — Plateforme d'intelligence d'affaires pour entrepreneurs en construction au Québec.
+    Voir aussi notre <a href="https://ragnarush.github.io/legal/aogo/terms.html">conditions générales d'utilisation</a>.
+  </footer>
+
+</div>
 </body>
 </html>
