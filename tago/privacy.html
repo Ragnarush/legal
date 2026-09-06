@@ -48,7 +48,7 @@
       <tr>
         <td>Envoi de documents par courriel <em>(optionnel, désactivé par défaut)</em></td>
         <td>Le document que vous envoyez : le PDF, le nom et l'adresse courriel du client, les montants.</td>
-        <td>Le service d'envoi de courriels que vous avez vous-même configuré dans les Réglages avec votre propre clé d'API — Brevo, Resend ou SendGrid. La transmission se fait en HTTPS, depuis votre compte ; TAGO n'a pas de serveur et ne la voit jamais.</td>
+        <td>Brevo, le service d'envoi de courriels que vous configurez vous-même dans les Réglages avec votre propre clé d'API. Brevo est une entreprise française qui héberge ses données dans l'Union européenne. La transmission se fait en HTTPS, depuis votre compte ; TAGO n'a pas de serveur et ne la voit jamais.</td>
       </tr>
       <tr>
         <td>Sauvegarde vers votre espace infonuagique <em>(optionnel, désactivé par défaut)</em></td>
@@ -70,13 +70,13 @@
     <ul>
       <li><strong>Sentry</strong> (Functional Software, Inc.) — rapports d'erreur techniques, hébergement dans l'UE ;</li>
       <li><strong>OpenFreeMap</strong> — fourniture des tuiles cartographiques de l'écran Zones ;</li>
-      <li><strong>Brevo</strong>, <strong>Resend</strong> ou <strong>SendGrid</strong> — uniquement si vous activez l'envoi par API, et uniquement le service que vous configurez.</li>
+      <li><strong>Brevo</strong> (Sendinblue SAS, France, hébergement dans l'Union européenne) — uniquement si vous activez l'envoi par API ;</li>
       <li><strong>Google Drive</strong> ou <strong>iCloud</strong> — uniquement si vous activez la sauvegarde infonuagique, et uniquement vers le compte dont vous êtes titulaire. Ils hébergent un fichier chiffré dont ils ne peuvent pas lire le contenu.</li>
       <li><strong>Google</strong> (Google LLC) — destinataire des mesures techniques émises par les composants ML Kit et facturation Google Play intégrés à l'application, selon la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>. Ces mesures ne comportent aucun contenu que vous saisissez ou photographiez.</li>
     </ul>
 
     <h2>6. Conservation des données</h2>
-    <p>Les données sur votre appareil sont conservées tant que l'application est installée ; les supprimer dans l'application, ou désinstaller l'application, les efface. Les rapports d'erreur Sentry sont supprimés automatiquement après environ 90 jours. Les courriels que vous envoyez sont conservés selon la politique du fournisseur que vous avez choisi. Si vous activez la sauvegarde infonuagique, TAGO ne conserve dans votre compte que les cinq sauvegardes les plus récentes et supprime les plus anciennes ; ces fichiers vous appartiennent et vous pouvez les supprimer vous-même à tout moment. Les mesures techniques des composants Google (section 4, cinquième cas) sont conservées par Google selon sa propre politique, sur laquelle TAGO n'a aucune prise.</p>
+    <p>Les données sur votre appareil sont conservées tant que l'application est installée ; les supprimer dans l'application, ou désinstaller l'application, les efface. Les rapports d'erreur Sentry sont supprimés automatiquement après environ 90 jours. Les courriels que vous envoyez sont conservés selon la politique de Brevo. Si vous activez la sauvegarde infonuagique, TAGO ne conserve dans votre compte que les cinq sauvegardes les plus récentes et supprime les plus anciennes ; ces fichiers vous appartiennent et vous pouvez les supprimer vous-même à tout moment. Les mesures techniques des composants Google (section 4, cinquième cas) sont conservées par Google selon sa propre politique, sur laquelle TAGO n'a aucune prise.</p>
 
     <h2>7. Sécurité</h2>
     <p>Les communications réseau de l'application sont chiffrées (HTTPS/TLS). Les données locales sont protégées par le bac à sable de l'application Android : une autre application ne peut pas y accéder. Les photos de reçus sont dans le stockage privé de l'application et exclues des sauvegardes automatiques du système. Les fichiers de sauvegarde que vous créez avec la fonction Sauvegarde sont chiffrés (AES-256-GCM) au moyen d'une phrase secrète que vous seul connaissez ; une phrase oubliée rend le fichier définitivement illisible, y compris une copie déposée dans votre espace infonuagique. Le chiffrement a lieu <em>avant</em> le téléversement : ce qui est transmis et stocké chez le fournisseur est un fichier opaque.</p>
