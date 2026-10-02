@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TAGO — Privacy Policy</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="alternate" hreflang="fr-CA" href="privacy.html">
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">&larr; Back to Legal</a>
+    <h1>Privacy Policy — TAGO</h1>
+    <p class="subtitle">Last updated: October 1, 2026</p>
+    <p><a href="privacy.html" hreflang="fr-CA" lang="fr-CA">Version française</a> — the French version prevails in case of discrepancy.</p>
+
+    <p>TAGO is a mobile app for self-employed workers in Quebec. It brings together a tax and deductions calculator, time tracking by geographic zone, expense receipt management and invoicing. This policy explains what data the app processes, what stays on your device, what leaves it, and how to exercise your rights.</p>
+
+    <h2>1. Who we are</h2>
+    <p>TAGO is developed and operated by an individual (Ragnarush), in Quebec. There is no TAGO user account, no TAGO server and no syncing of your data to us. Backup to a cloud storage space, described in section 4, is optional and goes to <em>your</em> account, as an already encrypted file. For any question, write to us at the address at the bottom of this page.</p>
+
+    <h2>2. Principle: your data stays on your device</h2>
+    <p>By default, TAGO works entirely offline. The information you enter or generate is sent neither to TAGO nor to any third party, except in the five limited cases described in section 4. These stay on your device only:</p>
+    <ul>
+      <li>your business profile and your payment instructions (for example an account number or an Interac email), your client registry, your catalogue of products and services, your invoices, quotes and payments received, your income received without an invoice (source and amount);</li>
+      <li>your supplier registry and your purchase orders;</li>
+      <li>your expenses and the photos and PDFs of your receipts;</li>
+      <li>your time-tracking sessions and your tax and deduction calculations;</li>
+      <li>your mileage log: your vehicles, their odometer readings and photos, and your business trips (date, destination, purpose, distance);</li>
+      <li>your preferences and the state of your purchase.</li>
+    </ul>
+    <p>Text recognition on receipts (OCR) runs on the device: neither the photo nor the recognized text is sent to anyone. Your GPS position, when time tracking uses it, is processed on the device and never sent (one exception: the "My location" button of the Zones screen, see section 4). The Google components that handle OCR and payment do, however, send Google <em>technical</em> metrics about their own operation, without the content processed — see the fifth case of section 4.</p>
+
+    <h2>3. Where it is stored</h2>
+    <p>Only in the database and private storage of this installation of the app — never in a shared space of the phone (gallery, Files) nor in the system's automatic cloud backup, which is turned off for TAGO. One exception: if you transfer your data to a new phone (by cable or Wi-Fi, with Android's or the manufacturer's transfer tool), the database and receipt photos go along, without the state of your TAGO Pro purchase, your email-sending API key or your backup passphrase. An export you start yourself (CSV, accountant's file or mileage log .xlsx, PDF of an invoice or purchase order, calendar) creates a file that you then control. If you turn on automatic export to a calendar in Settings (off by default), the app writes one event per calculation, per time-tracking session and per tax deadline (a date, never an amount), depending on what you turned on, in the calendar you choose on the device; these events then follow that calendar's sync (for example to your Google account if it is a Google calendar) — the system handles that, not TAGO.</p>
+    <p>The Backup feature in Settings also writes, only when you ask or to the folder you choose, a backup file encrypted with a passphrase you set. This file stays on your device or on the storage space you designate; it is never sent to a TAGO server. It contains neither the state of your TAGO Pro purchase nor your email-sending API key. It leaves the device only if you yourself turn on backup to your cloud storage (section 4, fourth case); it then leaves <strong>already encrypted</strong>, unreadable without your passphrase.</p>
+
+    <h2>4. Data that leaves the device</h2>
+    <p>Five cases, and five only:</p>
+    <table>
+      <tr><th>Case</th><th>What is sent</th><th>To whom, and why</th></tr>
+      <tr>
+        <td>Error reports</td>
+        <td>On a crash, or on an error the app could contain without closing (a save refused because storage is full, for example): the error trace, the app version, the device model and system version, and its state at the time of the error (memory, storage, battery, language, time zone, permissions granted). No identifier about you and no content of your data (the app is configured to exclude them). Sentry sees the IP address of the connection, but does not keep it and keeps no location from it.</td>
+        <td>Sentry (Functional Software, Inc.), an American company; reports are hosted in the European Union and are used to fix bugs. Data is deleted automatically after about 90 days.</td>
+      </tr>
+      <tr>
+        <td>Base map of the "Zones" screen</td>
+        <td>The geographic area shown on the map and your device's IP address. No other data is attached. The map opens on the zone you are editing or on the last zone centre you placed, never on your position by itself: it goes there only if you tap "My location", and the host then learns roughly where you are.</td>
+        <td>OpenFreeMap (tiles.openfreemap.org), to display the map used to outline your workplaces. Time tracking itself does not depend on the map.</td>
+      </tr>
+      <tr>
+        <td>Sending documents by email <em>(optional, off by default)</em></td>
+        <td>The document you send: the PDF, the recipient's name and email address (your client, or your supplier for a purchase order), the amounts and, on an invoice, your payment instructions if you entered any (for example an Interac address or bank details for a direct deposit).</td>
+        <td>Brevo, the email-sending service you set up yourself in Settings with your own API key. Brevo is a French company that hosts its data in the European Union. The transmission is made over HTTPS, from your account; TAGO has no server and never sees it.</td>
+      </tr>
+      <tr>
+        <td>Backup to your cloud storage <em>(optional, off by default)</em></td>
+        <td>Your backup file, <strong>already encrypted</strong> with your passphrase before it leaves the device: no one can read its content, neither the provider nor TAGO. The provider only sees that a file exists in your account, its name (<code>tago-backup-&lt;date&gt;-&lt;identifier&gt;.zip</code>), its size and its date. The identifier in the name is a randomly drawn label that helps you recognize the backups opened by the same passphrase; it is not derived from your passphrase and reveals nothing about it.</td>
+        <td>Your own Google Drive (Android) or iCloud (iOS) account, so that your backup survives the loss of the device. On Android, TAGO asks for access only to the files it creates itself (<code>drive.file</code> scope), never to the rest of your Drive; access can be revoked in Settings or from your Google account. This account may be hosted outside Quebec; the content of your backup stays encrypted there.</td>
+      </tr>
+      <tr>
+        <td>Technical metrics of the built-in Google components</td>
+        <td>Device model and version, app name and version, device identifier, response time, call configuration, event type (initialization, recognition, purchase) and error codes. Billing adds your TAGO Pro purchase. <strong>The content processed is never part of it</strong>: neither the receipt photo, nor the recognized text, nor your card number, which TAGO never sees anyway.</td>
+        <td>Google, on behalf of two components TAGO includes: receipt text recognition (ML Kit) and payment for TAGO Pro (Google Play Billing). These components send this on their own, over HTTPS; <strong>Google offers no way to turn it off</strong>, and TAGO does not see it go by. The text recognition component initializes when the app starts and may report that initialization even if you never scan a receipt; billing sends these metrics only for a purchase or its verification.</td>
+      </tr>
+    </table>
+    <div class="callout">
+      TAGO contains no advertising and no analytics or tracking tool added by TAGO, and never sells, rents or shares your information for commercial purposes. The technical metrics described in the fifth case above come from the built-in Google components, not from a measurement tool TAGO would have added.
+    </div>
+
+    <h2>5. Service providers</h2>
+    <p>The third parties mentioned in section 4 act as processors or recipients, each subject to its own privacy policy:</p>
+    <ul>
+      <li><strong>Sentry</strong> (Functional Software, Inc., United States) — technical error reports, hosted in the EU. An American company may be required to answer requests from its country's authorities, wherever the data is hosted; this is why the reports contain neither an identifier nor any content of your data;</li>
+      <li><strong>OpenFreeMap</strong> — provides the map tiles of the Zones screen;</li>
+      <li><strong>Brevo</strong> (Sendinblue SAS, France, hosted in the European Union) — only if you turn on sending by API;</li>
+      <li><strong>Google Drive</strong> or <strong>iCloud</strong> — only if you turn on cloud backup, and only to the account you own. They host an encrypted file whose content they cannot read.</li>
+      <li><strong>Google</strong> (Google LLC) — recipient of the technical metrics sent by the ML Kit and Google Play Billing components built into the app, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. These metrics contain nothing you enter or photograph.</li>
+    </ul>
+
+    <h2>6. Data retention</h2>
+    <p>Data on your device is kept as long as the app is installed; deleting it in the app, or uninstalling the app, erases it. Uninstalling does not erase what has already left the app: your export and backup files, the copies in your cloud storage and the events written to your calendar, which you delete yourself. For time-tracking sessions, turning off their sync in the app's Settings offers to remove them all at once. Sentry error reports are deleted automatically after about 90 days. The emails you send are kept according to Brevo's policy. If you turn on cloud backup, TAGO keeps only the five most recent backups in your account and deletes the older ones; these files belong to you and you can delete them yourself at any time. The technical metrics of the Google components (section 4, fifth case) are kept by Google according to its own policy, over which TAGO has no control.</p>
+
+    <h2>7. Security</h2>
+    <p>The app's network communications are encrypted (HTTPS/TLS). Local data is protected by the Android app sandbox: no other app can access it. Receipt photos are in the app's private storage, and the system's automatic cloud backup is turned off for TAGO (only a transfer to a new phone that you start yourself copies them, see section 3). The backup files you create with the Backup feature are encrypted (AES-256-GCM) with a passphrase only you know; a forgotten passphrase makes the file permanently unreadable, including a copy placed in your cloud storage. Encryption happens <em>before</em> the upload: what is sent to and stored by the provider is an opaque file.</p>
+
+    <h2>8. Your rights (Act 25 — Quebec)</h2>
+    <p>Since most of your data never leaves your device, you keep direct control of it: you can view, correct or delete any data in the app — registry, receipts, time-tracking history, invoices. Deleting an item also deletes its photo on disk, not just the database row.</p>
+    <p>Under the <em>Act respecting the protection of personal information in the private sector</em>, you have the right to access your information, to have it corrected, to withdraw your consent, and to file a complaint with the Commission d'accès à l'information du Québec. For a request about error reports or any other question, contact us at the address below.</p>
+
+    <h2>9. Person in charge of the protection of personal information</h2>
+    <p>The app lets you designate, in Settings, the person in charge of the protection of personal information within your business. Without a designation, under Act 25, it is the owner of the business that runs the TAGO installation.</p>
+
+    <h2>10. Geolocation and time tracking</h2>
+    <p>Time tracking uses your <strong>precise position (GPS)</strong>, processed only on the device and never sent to TAGO or to a third party. One exception: if you tap "My location" in the Zones screen, the portion of the map shown around you is requested from the tile host (section 4, base map).</p>
+    <p>Manual clock-in (button) asks for explicit consent before its first use; the position is read only during an open session.</p>
+    <p><strong>Automatic detection</strong> of entering and leaving your work zones also uses location <strong>in the background, including when the app is closed or not in use</strong>, for the sole purpose of starting and stopping your sessions automatically. No permanent notification is shown: during a session, a discreet notification, which you can swipe away, shows where you are clocked in and disappears at the end of the session. This feature is <strong>off by default</strong>, requires a second, separate and more detailed consent, and can be revoked at any time in Settings or in Android settings.</p>
+    <p>To check and improve detection, the app also keeps, <strong>on the device only</strong>, a log of what it detected (time, zone, inside or outside, accuracy of the reading — <strong>never your coordinates</strong>). The readings (inside or outside, accuracy) are normally erased after 8 days, and each entry after 90 days at most.</p>
+    <p>GPS measuring of a trip (mileage log, TAGO Pro) reads your precise position <strong>only</strong> between the moment you tap "Measure a trip" and the moment you end it — or after 20 minutes without moving —, with a notification visible throughout the measurement. Only the total distance is saved, <strong>never the route or your coordinates</strong>.</p>
+    <p>If you turn on "Offer a trip when I drive" in Settings (TAGO Pro, off by default), Android asks you for access to your "physical activity". TAGO uses <strong>only</strong> getting into and out of a vehicle, as detected by the phone, to show the question "Work trip?": it reads neither your steps nor any other activity, <strong>keeps nothing of this detection and sends nothing</strong>. Your position is read only if you tap "Measure", as above.</p>
+
+    <h2>11. Minors</h2>
+    <p>TAGO is intended for self-employed workers and is not meant for people under 18.</p>
+
+    <h2>12. Changes to this policy</h2>
+    <p>This policy may be updated from time to time. The last-updated date at the top of the page reflects the version in force.</p>
+
+    <h2>13. Contact us</h2>
+    <p><strong>Email:</strong> <a href="mailto:travailleurautonomego@gmail.com">travailleurautonomego@gmail.com</a></p>
+
+    <footer>
+      TAGO — Calculations, time tracking and receipts for self-employed workers in Quebec.
+      See also our <a href="terms.html">terms of use</a> (in French).
+    </footer>
+  </main>
+</body>
+</html>
