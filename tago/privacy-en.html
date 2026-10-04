@@ -62,7 +62,7 @@
       <tr>
         <td>Technical metrics of the built-in Google components</td>
         <td>Device model and version, app name and version, device identifier, response time, call configuration, event type (initialization, recognition, purchase) and error codes. Billing adds your TAGO Pro purchase. <strong>The content processed is never part of it</strong>: neither the receipt photo, nor the recognized text, nor your card number, which TAGO never sees anyway.</td>
-        <td>Google, on behalf of two components TAGO includes: receipt text recognition (ML Kit) and payment for TAGO Pro (Google Play Billing). These components send this on their own, over HTTPS; <strong>Google offers no way to turn it off</strong>, and TAGO does not see it go by. The text recognition component initializes when the app starts and may report that initialization even if you never scan a receipt; billing sends these metrics only for a purchase or its verification.</td>
+        <td>Google, on behalf of two components TAGO includes: receipt text recognition (ML Kit) and payment for TAGO Pro (Google Play Billing). These components send this on their own, over HTTPS; <strong>Google offers no way to turn it off</strong>, and TAGO does not see it go by. The text recognition component initializes only when the scanner is first opened or a receipt is first read: as long as you do not use these features, it sends nothing; billing sends these metrics only for a purchase or its verification.</td>
       </tr>
     </table>
     <div class="callout">

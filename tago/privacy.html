@@ -62,7 +62,7 @@
       <tr>
         <td>Mesures techniques des composants Google intégrés</td>
         <td>Modèle et version de l'appareil, nom et version de l'application, identifiant d'appareil, temps de réponse, configuration d'appel, type d'événement (initialisation, reconnaissance, achat) et codes d'erreur. La facturation y ajoute votre achat de TAGO Pro. <strong>Le contenu traité n'en fait jamais partie</strong> : ni la photo du reçu, ni le texte reconnu, ni votre numéro de carte, que TAGO ne voit d'ailleurs jamais.</td>
-        <td>Google, pour le compte de deux composants que TAGO intègre : la reconnaissance de texte des reçus (ML Kit) et le paiement de TAGO Pro (facturation Google Play). Ces composants effectuent cet envoi d'eux-mêmes, en HTTPS ; <strong>Google n'offre aucun moyen de le désactiver</strong>, et TAGO ne le voit pas passer. Le composant de reconnaissance de texte s'initialise au démarrage de l'application et peut signaler cette initialisation même si vous ne numérisez aucun reçu ; la facturation, elle, n'émet ces mesures que lors d'un achat ou de sa vérification.</td>
+        <td>Google, pour le compte de deux composants que TAGO intègre : la reconnaissance de texte des reçus (ML Kit) et le paiement de TAGO Pro (facturation Google Play). Ces composants effectuent cet envoi d'eux-mêmes, en HTTPS ; <strong>Google n'offre aucun moyen de le désactiver</strong>, et TAGO ne le voit pas passer. Le composant de reconnaissance de texte ne s'initialise qu'à la première ouverture du scanner ou lecture d'un reçu : tant que vous ne vous servez pas de ces fonctions, il n'émet rien ; la facturation, elle, n'émet ces mesures que lors d'un achat ou de sa vérification.</td>
       </tr>
     </table>
     <div class="callout">
