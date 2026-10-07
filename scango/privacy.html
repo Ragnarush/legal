@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ScanGO — Politique de confidentialité</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <main>
+    <a class="back" href="../index.html">&larr; Back to Legal</a>
+    <h1>Politique de confidentialité — ScanGO</h1>
+    <p class="subtitle">Dernière mise à jour : 7 octobre 2026</p>
+
+    <p>ScanGO est une application mobile qui lit les factures d'un grossiste à partir d'une photo, pour tenir l'inventaire d'un commerce : on scanne la facture, l'application en extrait l'en-tête, les lignes de produit et les totaux, on les vérifie, puis on les exporte en CSV ou en Excel. Cette politique explique quelles données l'application traite, ce qui reste sur votre appareil, ce qui en sort, et comment exercer vos droits.</p>
+
+    <h2>1. Qui sommes-nous</h2>
+    <p>ScanGO est développée et exploitée à titre individuel (Ragnarush), au Québec. Il n'existe aucun compte utilisateur ScanGO, aucun serveur ScanGO et aucune synchronisation de vos données vers nous. Pour toute question, écrivez-nous à l'adresse indiquée au bas de cette page.</p>
+
+    <h2>2. Principe : vos données restent sur votre appareil</h2>
+    <p>ScanGO fonctionne entièrement hors ligne. Restent uniquement sur votre appareil :</p>
+    <ul>
+      <li>les factures que vous enregistrez : l'en-tête (numéro, date, numéro de client, fournisseur, adresse de livraison, conditions de paiement), les lignes de produit (codes, descriptions, quantités, prix) et les totaux ;</li>
+      <li>vos préférences, comme la langue des fichiers d'export.</li>
+    </ul>
+    <p>Le scan et la reconnaissance de texte (OCR) s'exécutent sur l'appareil, au moyen de composants Google intégrés (ML Kit) : ni la photo de la facture, ni le texte reconnu ne sont transmis à qui que ce soit. Les photos ne sont pas conservées : chaque page est lue puis effacée aussitôt, et seules les données que vous enregistrez sont gardées. Les composants Google envoient toutefois à Google des mesures <em>techniques</em> sur leur propre fonctionnement, sans le contenu traité — voir la section 4.</p>
+
+    <h2>3. Où c'est stocké</h2>
+    <p>Dans la base de données privée de cette installation de l'application, qu'aucune autre application ne peut lire. Comme pour la plupart des applications Android, la <strong>sauvegarde automatique du système</strong> peut copier ces données dans le compte Google configuré sur l'appareil, si vous l'avez activée dans les paramètres d'Android, ainsi que vers un nouveau téléphone lors d'un transfert. Cette sauvegarde est gérée par Android et votre compte Google, et non par ScanGO ; ScanGO n'y a pas accès.</p>
+    <p>Un export (CSV ou Excel) que vous déclenchez vous-même crée un fichier que vous envoyez, par la feuille de partage d'Android, à l'application de votre choix (courriel, Drive…) : ce qu'il devient ensuite relève de cette application. Une copie des cinq derniers exports est gardée dans le stockage temporaire privé de ScanGO, pour que l'application qui les reçoit puisse encore les lire ; les plus anciens sont effacés au fil des exports, et Android peut vider ce stockage à tout moment.</p>
+
+    <h2>4. Données qui quittent l'appareil</h2>
+    <p>Un seul cas :</p>
+    <table>
+      <tr><th>Cas</th><th>Ce qui est transmis</th><th>À qui, et pourquoi</th></tr>
+      <tr>
+        <td>Mesures techniques des composants Google intégrés</td>
+        <td>Modèle et version de l'appareil, nom et version de l'application, identifiant d'appareil, temps de réponse, configuration d'appel, type d'événement (initialisation, scan, reconnaissance) et codes d'erreur. <strong>Le contenu traité n'en fait jamais partie</strong> : ni la photo de la facture, ni le texte reconnu, ni les données enregistrées.</td>
+        <td>Google, pour le compte des composants de scan de documents et de reconnaissance de texte (ML Kit) que ScanGO intègre. Ces composants effectuent cet envoi d'eux-mêmes, en HTTPS ; <strong>Google n'offre aucun moyen de le désactiver</strong>, et ScanGO ne le voit pas passer. Ils ne s'initialisent qu'au premier scan : tant que vous ne scannez rien, ils n'émettent rien.</td>
+      </tr>
+    </table>
+    <div class="callout">
+      ScanGO ne contient aucune publicité, aucun outil d'analytique ou de pistage, aucun rapport d'erreur automatique, et ne vend, ne loue ni ne partage jamais vos renseignements. Les mesures techniques décrites ci-dessus sont le fait des composants Google intégrés, et non d'un outil de mesure que ScanGO aurait ajouté.
+    </div>
+
+    <h2>5. Fournisseurs de services</h2>
+    <ul>
+      <li><strong>Google</strong> (Google LLC, États-Unis) — destinataire des mesures techniques émises par les composants ML Kit intégrés à l'application, selon la <a href="https://policies.google.com/privacy">politique de confidentialité de Google</a>. Ces mesures ne comportent aucun contenu que vous photographiez ou saisissez.</li>
+    </ul>
+
+    <h2>6. Conservation des données</h2>
+    <p>Les factures sont conservées sur votre appareil tant que vous ne les supprimez pas dans l'application ; désinstaller l'application, ou effacer ses données dans les paramètres d'Android, efface tout. La désinstallation n'efface pas ce qui a déjà quitté l'application : les fichiers d'export que vous avez envoyés, et la sauvegarde du système dans votre compte Google, gérée par Android. Les mesures techniques des composants Google (section 4) sont conservées par Google selon sa propre politique, sur laquelle ScanGO n'a aucune prise.</p>
+
+    <h2>7. Sécurité</h2>
+    <p>Les données locales sont protégées par le bac à sable de l'application Android : une autre application ne peut pas y accéder. Les photos des factures ne sont pas conservées. Les mesures techniques envoyées par les composants Google le sont en HTTPS.</p>
+
+    <h2>8. Vos droits (Loi 25 — Québec)</h2>
+    <p>Comme vos données ne quittent jamais votre appareil, vous en gardez le contrôle direct : vous pouvez consulter, corriger ou supprimer n'importe quelle facture dans l'application.</p>
+    <p>Conformément à la <em>Loi sur la protection des renseignements personnels dans le secteur privé</em>, vous avez le droit d'accéder à vos renseignements, de les faire rectifier, de retirer votre consentement, et de déposer une plainte auprès de la Commission d'accès à l'information du Québec. Pour toute question, contactez-nous à l'adresse ci-dessous.</p>
+
+    <h2>9. Mineurs</h2>
+    <p>ScanGO est un outil de gestion pour les commerces et n'est pas destinée aux personnes de moins de 18 ans.</p>
+
+    <h2>10. Modifications de cette politique</h2>
+    <p>Cette politique peut être mise à jour occasionnellement. La date de dernière mise à jour en haut de page reflète la version en vigueur.</p>
+
+    <h2>11. Nous contacter</h2>
+    <p><strong>Courriel :</strong> <a href="mailto:travailleurautonomego@gmail.com">travailleurautonomego@gmail.com</a></p>
+
+    <footer>
+      ScanGO — Lecture des factures de grossiste pour l'inventaire.
+    </footer>
+  </main>
+</body>
+</html>
