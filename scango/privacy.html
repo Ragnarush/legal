@@ -26,7 +26,7 @@
     <p>Le scan et la reconnaissance de texte (OCR) s'exécutent sur l'appareil, au moyen de composants Google intégrés (ML Kit) : ni la photo de la facture, ni le texte reconnu ne sont transmis à qui que ce soit. Les photos ne sont pas conservées : chaque page est lue puis effacée aussitôt, et seules les données que vous enregistrez sont gardées. Les composants Google envoient toutefois à Google des mesures <em>techniques</em> sur leur propre fonctionnement, sans le contenu traité — voir la section 4.</p>
 
     <h2>3. Où c'est stocké</h2>
-    <p>Dans la base de données privée de cette installation de l'application, qu'aucune autre application ne peut lire. Comme pour la plupart des applications Android, la <strong>sauvegarde automatique du système</strong> peut copier ces données dans le compte Google configuré sur l'appareil, si vous l'avez activée dans les paramètres d'Android, ainsi que vers un nouveau téléphone lors d'un transfert. Cette sauvegarde est gérée par Android et votre compte Google, et non par ScanGO ; ScanGO n'y a pas accès.</p>
+    <p>Uniquement dans la base de données privée de cette installation de l'application, qu'aucune autre application ne peut lire — jamais dans un espace partagé du téléphone, ni dans la sauvegarde infonuagique automatique du système, désactivée pour ScanGO. Une exception : si vous transférez vos données vers un nouveau téléphone (par câble ou Wi-Fi, avec l'outil de transfert d'Android ou du fabricant), vos factures suivent.</p>
     <p>Un export (CSV ou Excel) que vous déclenchez vous-même crée un fichier que vous envoyez, par la feuille de partage d'Android, à l'application de votre choix (courriel, Drive…) : ce qu'il devient ensuite relève de cette application. Une copie des cinq derniers exports est gardée dans le stockage temporaire privé de ScanGO, pour que l'application qui les reçoit puisse encore les lire ; les plus anciens sont effacés au fil des exports, et Android peut vider ce stockage à tout moment.</p>
 
     <h2>4. Données qui quittent l'appareil</h2>
@@ -49,10 +49,10 @@
     </ul>
 
     <h2>6. Conservation des données</h2>
-    <p>Les factures sont conservées sur votre appareil tant que vous ne les supprimez pas dans l'application ; désinstaller l'application, ou effacer ses données dans les paramètres d'Android, efface tout. La désinstallation n'efface pas ce qui a déjà quitté l'application : les fichiers d'export que vous avez envoyés, et la sauvegarde du système dans votre compte Google, gérée par Android. Les mesures techniques des composants Google (section 4) sont conservées par Google selon sa propre politique, sur laquelle ScanGO n'a aucune prise.</p>
+    <p>Les factures sont conservées sur votre appareil tant que vous ne les supprimez pas dans l'application ; désinstaller l'application, ou effacer ses données dans les paramètres d'Android, efface tout. La désinstallation n'efface pas ce qui a déjà quitté l'application : les fichiers d'export que vous avez envoyés. Les mesures techniques des composants Google (section 4) sont conservées par Google selon sa propre politique, sur laquelle ScanGO n'a aucune prise.</p>
 
     <h2>7. Sécurité</h2>
-    <p>Les données locales sont protégées par le bac à sable de l'application Android : une autre application ne peut pas y accéder. Les photos des factures ne sont pas conservées. Les mesures techniques envoyées par les composants Google le sont en HTTPS.</p>
+    <p>Les données locales sont protégées par le bac à sable de l'application Android : une autre application ne peut pas y accéder, et la sauvegarde infonuagique automatique du système est désactivée pour ScanGO. Les photos des factures ne sont pas conservées. Les mesures techniques envoyées par les composants Google le sont en HTTPS.</p>
 
     <h2>8. Vos droits (Loi 25 — Québec)</h2>
     <p>Comme vos données ne quittent jamais votre appareil, vous en gardez le contrôle direct : vous pouvez consulter, corriger ou supprimer n'importe quelle facture dans l'application.</p>
